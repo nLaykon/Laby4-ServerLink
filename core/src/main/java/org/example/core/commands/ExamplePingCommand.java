@@ -9,7 +9,7 @@ public class ExamplePingCommand extends Command {
   public ExamplePingCommand() {
     super("ping", "pong");
 
-    this.withSubCommand(new ExamplePingSubCommand());
+    this.withSubCommand(new Subcommands());
   }
 
   @Override

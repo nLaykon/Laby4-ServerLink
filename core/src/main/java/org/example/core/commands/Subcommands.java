@@ -4,9 +4,9 @@ import net.labymod.api.client.chat.command.SubCommand;
 import net.labymod.api.client.component.Component;
 import net.labymod.api.client.component.format.NamedTextColor;
 
-public class ExamplePingSubCommand extends SubCommand {
+public class Subcommands extends SubCommand {
 
-  protected ExamplePingSubCommand() {
+  protected Subcommands() {
     super("pong");
   }
 

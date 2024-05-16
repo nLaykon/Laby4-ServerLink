@@ -3,13 +3,13 @@ package org.example.core.listener;
 import net.labymod.api.event.Phase;
 import net.labymod.api.event.Subscribe;
 import net.labymod.api.event.client.lifecycle.GameTickEvent;
-import org.example.core.ExampleAddon;
+import org.example.core.ServerLink;
 
-public class ExampleGameTickListener {
+public class EnabledCheck {
 
-  private final ExampleAddon addon;
+  private final ServerLink addon;
 
-  public ExampleGameTickListener(ExampleAddon addon) {
+  public EnabledCheck(ServerLink addon) {
     this.addon = addon;
   }
 
@@ -19,6 +19,5 @@ public class ExampleGameTickListener {
       return;
     }
 
-    this.addon.logger().info(this.addon.configuration().enabled().get() ? "enabled" : "disabled");
   }
 }

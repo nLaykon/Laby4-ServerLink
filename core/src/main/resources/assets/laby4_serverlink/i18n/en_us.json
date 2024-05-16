@@ -1,7 +1,7 @@
 {
-  "example": {
+  "laby4_serverlink": {
     "settings": {
-      "name": "ExampleAddon",
+      "name": "Server Link!",
       "enabled": {
         "name": "Enabled"
       }

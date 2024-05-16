@@ -4,16 +4,16 @@ plugins {
     id("net.labymod.gradle.addon")
 }
 
-group = "org.example"
+group = "org.laykon"
 version = "1.0.0"
 
 labyMod {
-    defaultPackageName = "org.example" //change this to your main package name (used by all modules)
+    defaultPackageName = "org.laykon"
     addonInfo {
-        namespace = "example"
-        displayName = "ExampleAddon"
-        author = "Example Author"
-        description = "Example Description"
+        namespace = "laby4_serverlink"
+        displayName = "Server Link"
+        author = "Laykon"
+        description = "Links the current server you're playing to a given host"
         minecraftVersion = "*"
         version = System.getenv().getOrDefault("VERSION", "0.0.1")
     }
