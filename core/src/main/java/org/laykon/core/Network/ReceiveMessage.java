@@ -1,4 +1,4 @@
-package org.example.core.Network;
+package org.laykon.core.Network;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -6,7 +6,7 @@ import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import net.labymod.api.client.network.server.ServerData;
-import org.example.core.ServerLink;
+import org.laykon.core.ServerLink;
 
 import java.io.IOException;
 import java.io.InputStream;

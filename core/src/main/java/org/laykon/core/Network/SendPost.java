@@ -1,5 +1,6 @@
-package org.example.core.Network;
+package org.laykon.core.Network;
 
+import org.laykon.core.ServerLink;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,7 +16,7 @@ public class SendPost {
     thread.start();
   }
 
-  private static class Post implements Runnable {
+  private class Post implements Runnable {
     private String content;
 
     Post(String c) {
@@ -32,9 +33,9 @@ public class SendPost {
     }
   }
 
+
   public static void sendRequest(String content) throws IOException {
     String postData = "{\"testIg\": \"" + content + "\"}";
-
     URL myUrl = new URL("http://192.168.0.80:8000/post");
 
     HttpURLConnection serverConnect = (HttpURLConnection) myUrl.openConnection();

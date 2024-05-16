@@ -1,9 +1,9 @@
-package org.example.core;
+package org.laykon.core;
 
 import net.labymod.api.addon.LabyAddon;
 import net.labymod.api.models.addon.annotation.AddonMain;
-import org.example.core.Network.ReceiveMessage;
-import org.example.core.listener.MessageListener;
+import org.laykon.core.Network.ReceiveMessage;
+import org.laykon.core.listener.MessageListener;
 
 @AddonMain
 public class ServerLink extends LabyAddon<ServerLinkConfig> {
@@ -12,6 +12,7 @@ public class ServerLink extends LabyAddon<ServerLinkConfig> {
 
   @Override
   protected void enable() {
+    this.registerSettingCategory();
     messageReceiver = new ReceiveMessage(this);
     messageReceiver.startServer();
     this.registerListener(new MessageListener(this));
